@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Signup Form</title>
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="form-box">
+        <div id="login-form" class="animated show fadeIn fast">
+            <h1 id="login-text">Login</h1>
+            <br>
+            <form action="index.html" method="POST" autocomplete="off">
+                <label for="username">Username</label>
+                <br>
+                <input type="email" name="email" id="login-email" placeholder="Email ID ..." required="required">
+                <br><br>
+                <label for="password">Password</label>
+                <br>
+                <input type="password" name="password" id="login-password" required="required">
+                <br><br>
+                <input type="submit" value="Login">
+            </form>
+            <br>
+            <span style="color: white">New user ? <a href="#" style="text-decoration: none; color:black"
+                    id="create-account">create
+                    account</a></span>
+        </div>
+        <div id="signup-form" class="animated hide bounce slow">
+            <h1 id="signup-text">Signup</h1>
+            <br>
+            <form action="index.html" method="POST" autocomplete="off">
+                <label for="name">Name</label>
+                <br>
+                <input type="text" name="name" id="name" placeholder="Name ..." required="required">
+                <br><br>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" id="signup-email" placeholder="Email ID ..." required="required">
+                <br><br>
+                <label for="password">Password</label>
+                <br>
+                <input type="password" name="password" id="signup-password" required="required">
+                <br><br>
+                <label for="mobile-no">Mobile NO</label>
+                <br>
+                <input type="number" name="mobile-no" id="mobile-no" oninput="javascript: if (this.value.length > this.maxLength)  this.value = this.value.slice(0, this.maxLength);" maxlength=10 placeholder="9865321475" required="required">
+                <br><br>
+                <input type="submit" value="Signup">
+            </form>
+            <br>
+            <span style="color: white">Already have an account ? <a href="#" style="text-decoration: none; color:black"
+                    id="open-login">Login</a></span>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
